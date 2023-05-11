@@ -43,7 +43,9 @@ const About = () => {
             Kuwarasan District, Kebumen Regency, Central Java.
           </p>
 
-          <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          <div id="about-btn">
+            <a href="#contact" className="btn btn-primary">Let's Talk</a>
+          </div>
         </div>
       </div>
     </section>
