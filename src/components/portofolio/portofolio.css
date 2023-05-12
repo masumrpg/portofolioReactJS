@@ -1,0 +1,82 @@
+.portofolio-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.portofolio-item {
+    background: var(--color-bg-variant);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+
+.portofolio-item:hover {
+    border-color: var(--color-primary-variant);
+    background: transparent;
+    scale: 97%;
+}
+
+.portofolio-item-image {
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.portofolio-item h3 {
+    margin: 1.2rem 0 2rem;
+}
+
+.portofolio-item-cta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* ========== PERANKAT MENENGAH TAMPILAN WEB ========== */
+
+@media screen and (max-width: 1024px) {
+    #portofolio {
+        margin: 0;
+        padding-top: 4rem;
+    }
+
+    #portofolio > h2 {
+        margin-bottom: 10rem;
+    }
+
+    .portofolio-container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .portofolio-content {
+        padding: 1rem;
+    }
+}
+
+/* ========== PERANKAT KECIL TAMPILAN WEB DI HP ========== */
+
+@media screen and (max-width: 600px) {
+    #portofolio {
+        margin-top: 10rem;
+    }
+
+    #portofolio > h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portofolio-container {
+        grid-template-columns: 1fr;
+    }
+
+    .portofolio-container {
+        gap: 1rem;
+    }
+
+    .portofolio-container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
