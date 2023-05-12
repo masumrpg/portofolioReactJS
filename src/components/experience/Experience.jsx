@@ -9,19 +9,91 @@ const Experience = () => {
       <h2>My Experience</h2>
 
       <div className="container experience-container">
+
+        {/* ---------- GENERAL SKILLS ---------- */}
+
         <div className="experience-general">
           <h3>General Skills</h3>
           <div className="experience-content">
             <article className="experience-details">
-              <BsPatchCheckFill/>
-              <h4>Ms. Office</h4>
-              <small className="text-light">Experienced</small>
+              <BsPatchCheckFill className="experience-detail-icon"/>
+              <div>
+                <h4>Ms. Word</h4>
+                <small className="text-light">Competent</small>
+              </div>
+            </article>
+            <article className="experience-details">
+              <BsPatchCheckFill className="experience-detail-icon"/>
+              <div>
+                <h4>Ms. PowerPoint</h4>
+                <small className="text-light">Competent</small>
+              </div>
+            </article>
+            <article className="experience-details">
+              <BsPatchCheckFill className="experience-detail-icon"/>
+              <div>
+                <h4>Ms. Excel</h4>
+                <small className="text-light">Competent</small>
+              </div>
+            </article>
+            <article className="experience-details">
+              <BsPatchCheckFill className="experience-detail-icon"/>
+              <div>
+                <h4>Photoshop</h4>
+                <small className="text-light">Competent</small>
+              </div>
             </article>
           </div>
         </div>
 
-        <div className="experience-dev">
+        {/* ---------- DEV SKILLs ---------- */}
 
+        <div className="experience-dev">
+          <h3>Digital Knowladge Skills</h3>
+          <div className="experience-content">
+            <article className="experience-details">
+              <BsPatchCheckFill className="experience-detail-icon"/>
+              <div>
+                <h4>HTML</h4>
+                <small className="text-light">Advanced Beginner</small>
+              </div>
+            </article>
+            <article className="experience-details">
+              <BsPatchCheckFill className="experience-detail-icon"/>
+              <div>
+                <h4>CSS</h4>
+                <small className="text-light">Advanced Beginner</small>
+              </div>
+            </article>
+            <article className="experience-details">
+              <BsPatchCheckFill className="experience-detail-icon"/>
+              <div>
+                <h4>Java Script</h4>
+                <small className="text-light">Advanced Beginner</small>
+              </div>
+            </article>
+            <article className="experience-details">
+              <BsPatchCheckFill className="experience-detail-icon"/>
+              <div>
+                <h4>ReactJs</h4>
+                <small className="text-light">Basic</small>
+              </div>
+            </article>
+            <article className="experience-details">
+              <BsPatchCheckFill className="experience-detail-icon"/>
+              <div>
+                <h4>MySql</h4>
+                <small className="text-light">Basic</small>
+              </div>
+            </article>
+            <article className="experience-details">
+              <BsPatchCheckFill className="experience-detail-icon"/>
+              <div>
+                <h4>NodeJs</h4>
+                <small className="text-light">Basic</small>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>

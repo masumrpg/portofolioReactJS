@@ -2,13 +2,13 @@
     padding-top: 2rem;
 }
 
-.about__container {
+.about-container {
     display: grid;
     grid-template-columns: 35% 50%;
     gap: 15%;
 }
 
-.about__me {
+.about-me {
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 2rem;
@@ -17,24 +17,24 @@
     place-items: center;
 }
 
-.abuot__me-image {
+.abuot-me-image {
     border-radius: 2rem;
     overflow: hidden;
     transform: rotate(10deg);
     transition: var(--transition);
 }
 
-.abuot__me-image:hover {
+.abuot-me-image:hover {
     transform: rotate(0deg);
 }
 
-.about__cards {
+.about-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
 }
 
-.about__card {
+.about-card {
     background: var(--color-bg-variant);
     border: 1px solid transparent;
     border-radius: 1rem;
@@ -43,28 +43,28 @@
     transition: var(--transition);
 }
 
-.about__card:hover {
+.about-card:hover {
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
 }
 
-.about__icon {
+.about-icon {
     color: var(--color-primary);
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
 
-.about__card h5 {
+.about-card h5 {
     font-size: 0.9rem;
 }
 
-.about__card small {
+.about-card small {
     font-size: 0.7rem;
     color: var(--color-light);
 }
 
-.about__content p {
+.about-content p {
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
     text-align: justify;
@@ -81,17 +81,17 @@
         padding-top: 4rem;
     }
 
-    .about__container {
+    .about-container {
         grid-template-columns: 1fr;
         gap: 0;
     }
 
-    .about__me {
+    .about-me {
         width: 50%;
         margin: 2rem auto 4rem;
     }
 
-    .about__content p {
+    .about-content p {
         margin: 1rem 0 0.5rem;
     }
 }
@@ -101,28 +101,23 @@
 @media screen and (max-width: 600px) {
     #about {
         padding-top: 4rem;
+        overflow-y: auto;
     }
 
-    .about__me {
+    .about-me {
         width: 65%;
         margin: 0 auto 3rem;
     }
 
-    .about__cards {
-        display: block;
-        /* grid-template-columns: 1fr 1fr; */
-        /* gap: 1rem; */
+    .about-cards {
+        grid-template-columns: 1fr;
     }
 
-    .about__card {
-        margin-bottom: 1rem;
-    }
-
-    .about__content {
+    .about-content {
         text-align: center;
     }
 
-    .about__content p {
+    .about-content p {
         text-align: justify;
         margin: 1.5rem 0;
     }

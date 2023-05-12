@@ -11,27 +11,27 @@ const About = () => {
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
-      <div className="container about__container">
-        <div className="about__me">
-          <img src={MeAbout} alt="me" className="abuot__me-image" />
+      <div className="container about-container">
+        <div className="about-me">
+          <img src={MeAbout} alt="me" className="abuot-me-image" />
         </div>
 
-        <div className="about__content">
-          <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="about__icon" />
+        <div className="about-content">
+          <div className="about-cards">
+            <article className="about-card">
+              <FaAward className="about-icon" />
               <h5>Graduate</h5>
               <small>Universitas Putra Bangsa</small>
             </article>
 
-            <article className="about__card">
-              <GiChicken className="about__icon" />
+            <article className="about-card">
+              <GiChicken className="about-icon" />
               <h5>Experience</h5>
               <small>Finance Admin 6 Month</small>
             </article>
 
-            <article className="about__card">
-              <BiCodeAlt className="about__icon" />
+            <article className="about-card">
+              <BiCodeAlt className="about-icon" />
               <h5>FrontEnd</h5>
               <small>Some Web Dev Knowledge</small>
             </article>
