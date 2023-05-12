@@ -61,6 +61,7 @@
 @media screen and (max-width: 600px) {
     #portofolio {
         margin-top: 10rem;
+        overflow-y: auto;
     }
 
     #portofolio > h2 {
