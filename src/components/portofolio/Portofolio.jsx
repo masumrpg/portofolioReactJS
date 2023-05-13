@@ -28,7 +28,7 @@ const Portofolio = () => {
           <h3>Web Portofolio with HTML</h3>
           <div className="portofolio-item-cta">
             <a href="https://github.com/masumrpg/portofolioReactJS" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="http://dribbble.com/Alien_pixels" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
+            <a href="http://masum.byethost4.com/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
           </div>
         </article>
       </div>
