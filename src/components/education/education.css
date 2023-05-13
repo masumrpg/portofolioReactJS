@@ -77,6 +77,10 @@
 /* ========== PERANKAT KECIL TAMPILAN WEB DI HP ========== */
 
 @media screen and (max-width: 600px) {
+    #education {
+        margin-top: 28rem;
+    }
+
     #education > h2 {
         margin-bottom: 3rem;
     }
