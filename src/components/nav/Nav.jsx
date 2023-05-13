@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-scroll'
+// import { Link } from 'react-scroll'
 import './nav.css'
 import {AiOutlineHome} from 'react-icons/ai'
 import {AiOutlineUser} from 'react-icons/ai'
