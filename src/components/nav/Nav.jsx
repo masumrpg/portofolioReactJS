@@ -6,19 +6,23 @@ import {AiOutlineBook} from 'react-icons/ai'
 import {RiServiceLine} from 'react-icons/ri'
 import {TbMessageCode} from 'react-icons/tb'
 import {useState} from 'react'
+import { Link } from 'react-scroll'
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState('#')
+    const [click, setClick] = useState(false)
+    // const handleClick = () => setClick(!click)
 
-  return (
-    <nav>
-      <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome/></a>
-      <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}><AiOutlineUser/></a>
-      <a href="#education" onClick={() => setActiveNav('#experience')} className={activeNav === '#experience' ? 'active' : ''}><AiOutlineBook/></a>
-      <a href="#experience" onClick={() => setActiveNav('#services')} className={activeNav === '#services' ? 'active' : ''}><RiServiceLine/></a>
-      <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><TbMessageCode/></a>
+    const closeMenu = () => setClick(false)
+
+    return (
+    <nav className={click ? "nav-menu active" : "nav-menu"}>
+        <Link className='nav-item' to="home" spy={true} smooth={true} offset={0} duration={50} onClick={closeMenu}><AiOutlineHome/></Link>
+        <Link className='nav-item' to="about" spy={true} smooth={true} offset={0} duration={50} onClick={closeMenu}><AiOutlineUser/></Link>
+        <Link className='nav-item' to="education" spy={true} smooth={true} offset={0} duration={50} onClick={closeMenu}><AiOutlineBook/></Link>
+        <Link className='nav-item' to="experience" spy={true} smooth={true} offset={0} duration={50} onClick={closeMenu}><RiServiceLine/></Link>
+        <Link className='nav-item' to="contact" spy={true} smooth={true} offset={0} duration={50} onClick={closeMenu}><TbMessageCode/></Link>
     </nav>
-  )
+    )
 }
 
 export default Nav

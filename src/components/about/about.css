@@ -1,5 +1,6 @@
 #about {
     padding-top: 2rem;
+    background: var(--color-section-variant);
 }
 
 .about-container {
@@ -79,6 +80,7 @@
 @media screen and (max-width: 1024px) {
     #about {
         padding-top: 4rem;
+        background: transparent;
     }
 
     .about-container {
@@ -100,8 +102,10 @@
 
 @media screen and (max-width: 600px) {
     #about {
-        padding-top: 4rem;
-        /* overflow-y: auto; */
+        margin-top: 0;
+        padding-top: 2rem;
+        height: max-content;
+        padding-bottom: 3rem;
     }
 
     .about-me {

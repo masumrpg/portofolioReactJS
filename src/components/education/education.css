@@ -50,11 +50,6 @@
 /* ========== PERANKAT MENENGAH TAMPILAN WEB ========== */
 
 @media screen and (max-width: 1024px) {
-    #education {
-        margin: 0;
-        padding-top: 4rem;
-    }
-
     #education > h2 {
         margin-bottom: 20rem;
     }
@@ -78,7 +73,9 @@
 
 @media screen and (max-width: 600px) {
     #education {
-        margin-top: 28rem;
+        margin-top: 0;
+        height: max-content;
+        padding-bottom: 3rem;
     }
 
     #education > h2 {

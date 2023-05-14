@@ -1,3 +1,7 @@
+#portofolio {
+    padding-top: 2rem;
+}
+
 .portofolio-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -38,7 +42,6 @@
 @media screen and (max-width: 1024px) {
     #portofolio {
         margin: 0;
-        padding-top: 4rem;
     }
 
     #portofolio > h2 {
@@ -60,8 +63,9 @@
 
 @media screen and (max-width: 600px) {
     #portofolio {
-        margin-top: 10rem;
-        /* overflow-y: auto; */
+        margin-top: 0;
+        height: max-content;
+        padding-bottom: 3rem;
     }
 
     #portofolio > h2 {

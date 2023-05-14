@@ -1,5 +1,6 @@
 #experience {
     padding-top: 2rem;
+    background: var(--color-section-variant);
 }
 
 .experience-container {
@@ -49,7 +50,7 @@
 @media screen and (max-width: 1024px) {
     #experience {
         margin: 0;
-        padding-top: 4rem;
+        background: transparent;
     }
 
     .experience-container {
@@ -70,6 +71,11 @@
 /* ========== PERANKAT KECIL TAMPILAN WEB DI HP ========== */
 
 @media screen and (max-width: 600px) {
+    #experience {
+        height: max-content;
+        padding-bottom: 3rem;
+    }
+
     .experience-container {
         gap: 1rem;
     }
