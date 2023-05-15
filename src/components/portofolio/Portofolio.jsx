@@ -3,6 +3,23 @@ import './portofolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
 
+const data = [
+  {
+    id: 1,
+    image: IMG1,
+    title: 'Web Portofolio with HTML Basic',
+    github: 'https://github.com/masumrpg/Portofolio',
+    demo: 'https://masumrpg.github.io/Portofolio/'
+  },
+  {
+    id: 2,
+    image: IMG2,
+    title: 'Web Portofolio with ReactJS',
+    github: 'https://github.com/masumrpg/portofolioReactJS',
+    demo: '#'
+  }
+]
+
 const Portofolio = () => {
   return (
     <section id="portofolio">
@@ -10,27 +27,22 @@ const Portofolio = () => {
       <h2>Portofolio</h2>
 
       <div className="container portofolio-container">
-        <article className="portofolio-item">
-          <div className="portofolio-item-image">
-            <img src={IMG1} alt="img" />
-          </div>
-          <h3>Web Portofolio with HTML</h3>
-          <div className="portofolio-item-cta">
-            <a href="https://github.com/masumrpg/Portofolio" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="https://masumrpg.github.io/Portofolio/" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
-          </div>
-        </article>
-
-        <article className="portofolio-item">
-          <div className="portofolio-item-image">
-            <img src={IMG2} alt="img1" />
-          </div>
-          <h3>Web Portofolio with ReactJS</h3>
-          <div className="portofolio-item-cta">
-            <a href="https://github.com/masumrpg/portofolioReactJS" className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="#" className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
-          </div>
-        </article>
+        {
+          data.map(({id, image, title, github, demo}) => {
+            return (
+              <article key={id} className="portofolio-item">
+                <div className="portofolio-item-image">
+                  <img src={image} alt={title} />
+                </div>
+                <h3>{title}</h3>
+                <div className="portofolio-item-cta">
+                  <a href={github} className='btn' target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href={demo} className='btn btn-primary' target="_blank" rel="noopener noreferrer">Live Demo</a>
+                </div>
+              </article>
+            )
+          })
+        }
       </div>
     </section>
   )
