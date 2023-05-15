@@ -19,7 +19,6 @@
 .portofolio-item:hover {
     border-color: var(--color-primary-variant);
     background: transparent;
-    scale: 97%;
 }
 
 .portofolio-item-image {
