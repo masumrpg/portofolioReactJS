@@ -21,6 +21,7 @@
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
+    box-shadow: 0 0 1rem var(--color-primary);
 }
 
 .experience-container > div h3 {

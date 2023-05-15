@@ -31,4 +31,5 @@ nav {
 .nav-item.active {
     background: var(--color-primary);
     color: var(--color-bg);
+    box-shadow: 0 0 0.8rem var(--color-primary);
 }

@@ -1,7 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react'
 import emailjs from '@emailjs/browser'
 import EmailSent from './EmailSent'
-// import { useState } from 'react';
 import './contact.css'
 import {HiOutlineMail} from 'react-icons/hi'
 import {FaFacebookMessenger} from 'react-icons/fa'
@@ -63,11 +62,11 @@ const Contact = () => {
 
         {emailSent ? <EmailSent /> : (
           <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Your Full Name' required />
-          <input type="email" name='email' placeholder='Your Email' required />
-          <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
-          <button type='submit' className='btn btn-primary'>Send Message</button>
-        </form>
+            <input type="text" name='name' placeholder='Your Full Name' required />
+            <input type="email" name='email' placeholder='Your Email' required />
+            <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
+            <button type='submit' className='btn btn-primary'>Send Message</button>
+          </form>
         )}
         
       </div>

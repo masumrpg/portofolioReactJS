@@ -28,7 +28,6 @@ const Header = () => {
       <div className="container header-container">
         <h5>Halo, My Name is</h5>
         <h1>Ma'sum</h1>
-        {/* <h5 className="text-light">Coding's is My Hobby</h5> */}
         <span ref={el} className="text-light"/>
         <CTA/>
         <HeaderSocials/>

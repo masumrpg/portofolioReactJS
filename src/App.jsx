@@ -7,22 +7,9 @@ import Experience from './components/experience/Experience'
 import Portofolio from './components/portofolio/Portofolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
-import ScrollReveal from 'scrollreveal'
 
 
 const App = () => {
-  ScrollReveal({
-    reset: true,
-    distance: '80px',
-    duration: 2000,
-    delay: 200
-  })
-
-  ScrollReveal().reveal('Header, Portofolio', { origin: 'top' })
-  ScrollReveal().reveal('About, Contact', { origin: 'right' })
-  ScrollReveal().reveal('Education', { origin: 'left' })
-  ScrollReveal().reveal('Experience', { origin: 'bottom' })
-
   return (
     <>
       <Header />

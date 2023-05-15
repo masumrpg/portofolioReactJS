@@ -10,6 +10,13 @@ header {
     position: relative;
 }
 
+/* ========== TYPED TEXT ========== */
+
+.text-light {
+    font-size: 0.9rem;
+    text-shadow: var(--color-primary) 1px 0 10px;
+}
+
 /* ========== CTA ========== */
 
 .cta {
@@ -31,6 +38,10 @@ header {
     bottom: 3rem;
 }
 
+.social:hover {
+    box-shadow: 0 0 1rem var(--color-primary);
+}
+
 .header-socials::after {
     content: "";
     width: 1px;
@@ -50,6 +61,19 @@ header {
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
     padding: 5rem 1.5rem 1.5rem 1.5rem;
+    animation: glow 4s ease-in-out infinite;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: 0 0 2rem var(--color-primary);
+    }
+    100% {
+        box-shadow: none;
+    }
 }
 
 /* ========== GULIR KEBAWAH ========== */
@@ -61,6 +85,10 @@ header {
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 0.9rem;
+}
+
+.scroll-down:hover {
+    text-shadow: 0 0 1rem var(--color-primary);
 }
 
 /* ========== PERANKAT MENENGAH TAMPILAN WEB ========== */

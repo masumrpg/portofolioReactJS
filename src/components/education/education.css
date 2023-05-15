@@ -24,6 +24,7 @@
     background: var(--color-bg-variant);
     border-color: transparent;
     cursor: default;
+    box-shadow: 0 0 1rem var(--color-primary);
 }
 
 .education-container > div h3 small p {

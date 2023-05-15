@@ -28,6 +28,7 @@
 
 .abuot-me-image:hover {
     transform: rotate(0deg);
+    box-shadow: 0 0 2rem var(--color-primary);
 }
 
 .about-cards {
@@ -49,6 +50,7 @@
     background: transparent;
     border-color: var(--color-primary-variant);
     cursor: default;
+    box-shadow: 0 0 1rem var(--color-primary);
 }
 
 .about-icon {
