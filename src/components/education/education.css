@@ -1,0 +1,98 @@
+#education {
+    padding-top: 2rem;
+}
+
+#education > h2 {
+    margin-bottom: 7rem;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.education-container > div {
+    background: transparent;
+    padding: 2rem 4rem;
+    border-radius: 2rem;
+    border: 1px solid var(--color-white);
+    transition: var(--transition);
+}
+
+.education-container > div:hover {
+    background: var(--color-bg-variant);
+    border-color: transparent;
+    cursor: default;
+    box-shadow: 0 0 1rem var(--color-primary);
+}
+
+.education-container > div h3 small p {
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.education-content {
+    text-align: center;
+}
+
+.education-content > h3 {
+    color: var(--color-primary);
+}
+
+.education-content > p {
+    font-size: 0.7rem;
+}
+
+.education-icon {
+    font-size: 1.5rem;
+}
+
+/* ========== PERANKAT MENENGAH TAMPILAN WEB ========== */
+
+@media screen and (max-width: 1024px) {
+    #education > h2 {
+        margin-bottom: 20rem;
+    }
+
+    .education-container {
+        gap: 0;
+    }
+
+    .education-container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .education-content {
+        padding: 1rem;
+    }
+}
+
+/* ========== PERANKAT KECIL TAMPILAN WEB DI HP ========== */
+
+@media screen and (max-width: 600px) {
+    #education {
+        margin-top: 0;
+        height: max-content;
+        padding-bottom: 3rem;
+    }
+
+    #education > h2 {
+        margin-bottom: 3rem;
+    }
+
+    .education-container {
+        grid-template-columns: 1fr;
+    }
+
+    .education-container {
+        gap: 1rem;
+    }
+
+    .education-container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}
