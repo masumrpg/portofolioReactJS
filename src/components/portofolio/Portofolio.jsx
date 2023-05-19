@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import ScrollReveal from 'scrollreveal'
 import './portofolio.css'
 import IMG1 from '../../assets/portfolio1.jpg'
 import IMG2 from '../../assets/portfolio2.jpg'
@@ -21,6 +22,20 @@ const data = [
 ]
 
 const Portofolio = () => {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: '80px',
+      duration: 2000,
+      delay: 200
+    });
+
+    sr.reveal('#portofolio', { reset: true, origin: 'bottom' });
+
+    return () => {
+      sr.destroy();
+    };
+  }, [])
+
   return (
     <section id="portofolio">
       <h5>GitHub Project</h5>

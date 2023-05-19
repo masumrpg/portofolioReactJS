@@ -8,8 +8,27 @@ import Portofolio from './components/portofolio/Portofolio'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
+import ScrollReveal from 'scrollreveal'
+import { useEffect } from 'react';
+
 
 const App = () => {
+
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: '80px',
+      duration: 2000,
+      delay: 200
+    });
+
+    sr.reveal('Header', { reset: true, origin: 'top' });
+    sr.reveal('Nav', { origin: 'bottom' });
+
+    return () => {
+      sr.destroy();
+    };
+  }, []);
+
   return (
     <>
       <Header />

@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react'
+import ScrollReveal from 'scrollreveal'
 import emailjs from '@emailjs/browser'
 import EmailSent from './EmailSent'
 import './contact.css'
@@ -7,8 +8,23 @@ import {FaFacebookMessenger} from 'react-icons/fa'
 import {BsWhatsapp} from 'react-icons/bs'
 
 const Contact = () => {
+  // ========== ANIMASI ==========
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: '80px',
+      duration: 2000,
+      delay: 200
+    });
+
+    sr.reveal('#contact', { reset: true, origin: 'left' });
+
+    return () => {
+      sr.destroy();
+    };
+  }, [])
+
+  // ========== FUNCTION EMAIL SEND ==========
   const form = useRef()
-  //Percobaan
   const [emailSent, setEmailSent] = useState(false)
 
   useEffect(() => {

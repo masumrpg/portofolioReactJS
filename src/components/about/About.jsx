@@ -1,11 +1,26 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './about.css'
 import MeAbout from '../../assets/me-about.jpg'
 import {FaAward} from 'react-icons/fa'
 import {GiChicken} from 'react-icons/gi'
 import {BiCodeAlt} from 'react-icons/bi'
+import ScrollReveal from 'scrollreveal'
 
 const About = () => {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: '80px',
+      duration: 2000,
+      delay: 200
+    });
+
+    sr.reveal('#about', { reset: true, origin: 'right' });
+
+    return () => {
+      sr.destroy();
+    };
+  }, [])
+
   return (
     <section id="about">
       <h5>Get To Know</h5>

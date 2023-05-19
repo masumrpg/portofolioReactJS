@@ -1,8 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './experience.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
+import ScrollReveal from 'scrollreveal'
 
 const Experience = () => {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: '80px',
+      duration: 2000,
+      delay: 200
+    });
+
+    sr.reveal('#experience', { reset: true, origin: 'right' });
+
+    return () => {
+      sr.destroy();
+    };
+  }, [])
+
   return (
     <section id="experience">
       <h5>What Skills I Have</h5>

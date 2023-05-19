@@ -12,7 +12,7 @@ header {
 
 /* ========== TYPED TEXT ========== */
 
-.text-light {
+.text-light-span {
     font-size: 0.9rem;
     text-shadow: var(--color-primary) 1px 0 10px;
 }

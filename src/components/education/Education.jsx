@@ -1,8 +1,24 @@
 import React from 'react'
 import './education.css'
 import {GiGraduateCap} from 'react-icons/gi'
+import { useEffect } from 'react'
+import ScrollReveal from 'scrollreveal'
 
 const Services = () => {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      distance: '80px',
+      duration: 2000,
+      delay: 200
+    });
+
+    sr.reveal('#education', { reset: true, origin: 'left' });
+
+    return () => {
+      sr.destroy();
+    };
+  }, []);
+
   return (
     <section id="education">
       <h5>Educational</h5>
