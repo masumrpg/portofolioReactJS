@@ -29,7 +29,7 @@ const Portofolio = () => {
       delay: 200
     });
 
-    sr.reveal('.portofolio-container', { reset: true, origin: 'bottom' });
+    sr.reveal('.portofolio-container', { reset: true, origin: 'left' });
 
     return () => {
       sr.destroy();
@@ -38,8 +38,8 @@ const Portofolio = () => {
 
   return (
     <section id="portofolio">
-      <h5>GitHub Project</h5>
-      <h2>Portofolio</h2>
+      <h5 className="title-anim">GitHub Project</h5>
+      <h2 className="title-anim">Portofolio</h2>
 
       <div className="container portofolio-container">
         {

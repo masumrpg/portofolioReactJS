@@ -11,8 +11,8 @@ const Experience = () => {
       delay: 200
     });
 
-    sr.reveal('.experience-general', { reset: true, origin: 'left' });
-    sr.reveal('.experience-dev', { reset: true, origin: 'right' });
+    sr.reveal('.experience-general', { reset: true, origin: 'top' });
+    sr.reveal('.experience-dev', { reset: true, origin: 'bottom' });
 
     return () => {
       sr.destroy();
@@ -21,8 +21,8 @@ const Experience = () => {
 
   return (
     <section id="experience">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
+      <h5 className="title-anim">What Skills I Have</h5>
+      <h2 className="title-anim">My Experience</h2>
 
       <div className="container experience-container">
 

@@ -15,12 +15,11 @@ const About = () => {
     });
 
     // ANIMASI GAMBAR
-    sr.reveal('.about-me', { reset: true, origin: 'right' });
-    sr.reveal('img', { reset: true, origin: 'left' });
+    sr.reveal('.about-img-anim', { reset: true, origin: 'left' });
 
     // ANIMASI KOTAK 3
-    sr.reveal('.about-card, h5, h2', { reset: true, origin: 'top' });
-    sr.reveal('p, #about-btn', { reset: true, origin: 'bottom' });
+    sr.reveal('.about-card', { reset: true, origin: 'top' });
+    sr.reveal('.p-anim, #about-btn', { reset: true, origin: 'bottom' });
 
     return () => {
       sr.destroy();
@@ -29,11 +28,11 @@ const About = () => {
 
   return (
     <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <h5 className="title-anim">Get To Know</h5>
+      <h2 className="title-anim">About Me</h2>
 
       <div className="container about-container">
-        <div className="about-me">
+        <div className="about-me about-img-anim">
           <img src={MeAbout} alt="me" className="abuot-me-image" />
         </div>
 
@@ -58,7 +57,7 @@ const About = () => {
             </article>
           </div>
 
-          <p>
+          <p className='p-anim'>
             I like challenging work, like work that makes me grow, can work under pressure and can be a little creative.
             I graduated from Putra Bangsa University, Kebumen since December 2021, which is located in Serut Village,
             Kuwarasan District, Kebumen Regency, Central Java.

@@ -21,8 +21,8 @@ const Services = () => {
 
   return (
     <section id="education">
-      <h5>Educational</h5>
-      <h2>Background</h2>
+      <h5 className="title-anim">Educational</h5>
+      <h2 className="title-anim">Background</h2>
 
       <div className="container education-container">
         <div className="education-content">

@@ -16,12 +16,12 @@ const Contact = () => {
       delay: 200
     });
 
-    sr.reveal('.contact-options', { reset: true, origin: 'left' });
-    sr.reveal('form', { reset: true, origin: 'right' });
+    sr.reveal('.title-contact', { reset: true, origin: 'bottom' });
+    sr.reveal('form, .contact-options', { reset: true, origin: 'bottom' });
 
-    return () => {
-      sr.destroy();
-    };
+    // return () => {
+    //   sr.destroy();
+    // };
   }, [])
 
   // ========== FUNCTION EMAIL SEND ==========
@@ -49,8 +49,8 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h5>Get in Touch</h5>
-      <h2>Contact Me</h2>
+      <h5 className='title-contact'>Get in Touch</h5>
+      <h2 className='title-contact'>Contact Me</h2>
 
       <div className="container contact-container">
         <div className="contact-options">
