@@ -11,7 +11,8 @@ const Experience = () => {
       delay: 200
     });
 
-    sr.reveal('#experience', { reset: true, origin: 'right' });
+    sr.reveal('.experience-general', { reset: true, origin: 'left' });
+    sr.reveal('.experience-dev', { reset: true, origin: 'right' });
 
     return () => {
       sr.destroy();

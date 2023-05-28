@@ -16,7 +16,8 @@ const Contact = () => {
       delay: 200
     });
 
-    sr.reveal('#contact', { reset: true, origin: 'left' });
+    sr.reveal('.contact-options', { reset: true, origin: 'left' });
+    sr.reveal('form', { reset: true, origin: 'right' });
 
     return () => {
       sr.destroy();

@@ -12,7 +12,7 @@ const Services = () => {
       delay: 200
     });
 
-    sr.reveal('#education', { reset: true, origin: 'left' });
+    sr.reveal('.education-content', { reset: true, origin: 'bottom' });
 
     return () => {
       sr.destroy();

@@ -14,7 +14,13 @@ const About = () => {
       delay: 200
     });
 
-    sr.reveal('#about', { reset: true, origin: 'right' });
+    // ANIMASI GAMBAR
+    sr.reveal('.about-me', { reset: true, origin: 'right' });
+    sr.reveal('img', { reset: true, origin: 'left' });
+
+    // ANIMASI KOTAK 3
+    sr.reveal('.about-card, h5, h2', { reset: true, origin: 'top' });
+    sr.reveal('p, #about-btn', { reset: true, origin: 'bottom' });
 
     return () => {
       sr.destroy();
