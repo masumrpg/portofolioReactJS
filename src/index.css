@@ -26,9 +26,9 @@
     --container-width-sm: 90%;
 }
 
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
 
 ::-webkit-scrollbar {
     display: none;
