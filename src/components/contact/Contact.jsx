@@ -16,8 +16,7 @@ const Contact = () => {
       delay: 200
     });
 
-    sr.reveal('.title-contact', { reset: true, origin: 'bottom' });
-    sr.reveal('form, .contact-options', { reset: true, origin: 'bottom' });
+    sr.reveal('.title-contact, .contact-option, input, textarea, #btn-contact-anim', { reset: true, origin: 'bottom' });
 
     // return () => {
     //   sr.destroy();
@@ -82,7 +81,7 @@ const Contact = () => {
             <input type="text" name='name' placeholder='Your Full Name' required />
             <input type="email" name='email' placeholder='Your Email' required />
             <textarea name="message" rows="7" placeholder='Your Message' required></textarea>
-            <button type='submit' className='btn btn-primary'>Send Message</button>
+            <button type='submit' id='btn-contact-anim' className='btn btn-primary'>Send Message</button>
           </form>
         )}
         

@@ -29,7 +29,7 @@ const Portofolio = () => {
       delay: 200
     });
 
-    sr.reveal('.portofolio-container', { reset: true, origin: 'left' });
+    sr.reveal('.portofolio-item', { reset: true, origin: 'left' });
 
     // return () => {
     //   sr.destroy();
