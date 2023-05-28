@@ -20,9 +20,9 @@ const Nav = () => {
         // TITILE ANIM ALL
         sr.reveal("nav", { reset: false, origin: "bottom" });
 
-        return () => {
-            sr.destroy();
-        };
+        // return () => {
+        //     sr.destroy();
+        // };
     }, []);
 
     const [click, setClick] = useState(false);

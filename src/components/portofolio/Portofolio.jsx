@@ -31,9 +31,9 @@ const Portofolio = () => {
 
     sr.reveal('.portofolio-container', { reset: true, origin: 'left' });
 
-    return () => {
-      sr.destroy();
-    };
+    // return () => {
+    //   sr.destroy();
+    // };
   }, [])
 
   return (

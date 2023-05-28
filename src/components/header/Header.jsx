@@ -21,9 +21,9 @@ const Header = () => {
 
     sr.reveal('.cta', { reset: true, origin: 'top' });
 
-    return () => {
-      sr.destroy();
-    };
+    // return () => {
+    //   sr.destroy();
+    // };
   }, []);
 
 

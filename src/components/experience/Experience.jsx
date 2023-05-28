@@ -14,9 +14,9 @@ const Experience = () => {
     sr.reveal('.experience-general', { reset: true, origin: 'top' });
     sr.reveal('.experience-dev', { reset: true, origin: 'bottom' });
 
-    return () => {
-      sr.destroy();
-    };
+    // return () => {
+    //   sr.destroy();
+    // };
   }, [])
 
   return (

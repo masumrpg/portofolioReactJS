@@ -14,9 +14,9 @@ const Services = () => {
 
     sr.reveal('.education-content', { reset: true, origin: 'bottom' });
 
-    return () => {
-      sr.destroy();
-    };
+    // return () => {
+    //   sr.destroy();
+    // };
   }, []);
 
   return (

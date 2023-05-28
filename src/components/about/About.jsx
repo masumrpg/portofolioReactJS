@@ -21,9 +21,9 @@ const About = () => {
     sr.reveal('.about-card', { reset: true, origin: 'top' });
     sr.reveal('.p-anim, #about-btn', { reset: true, origin: 'bottom' });
 
-    return () => {
-      sr.destroy();
-    };
+    // return () => {
+    //   sr.destroy();
+    // };
   }, [])
 
   return (
